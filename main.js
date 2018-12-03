@@ -13,7 +13,10 @@ let movie = {
 
 function showProperties(obj){
     for(let key in obj){
-        console.log(key);
+        if (typeof(obj[key]) === "string") {
+            console.log(key + ": " + obj[key])
+        }
+        
     }
 
 }
